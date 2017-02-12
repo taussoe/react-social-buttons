@@ -29,7 +29,7 @@ export default class FacebookLikeButton extends React.Component{
 
   componentWillUnmount(){
     let elem = document.getElementById('facebook-jssdk')
-    if(elem !== undefined){
+    if(elem !== undefined && elem !== null){
       elem.parentNode.removeChild(elem);
     }
   }
